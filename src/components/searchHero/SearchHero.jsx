@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import './styles.css';
 
-export const SearchHero = ({ SearchHero }) => {
+export const SearchHero = ({ searchHero }) => {
   const [inputValue, setInputValue] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    SearchHero(inputValue);
+    searchHero(inputValue);
   };
 
   const handleInputChange = (e) => {
