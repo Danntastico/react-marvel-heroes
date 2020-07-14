@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Unit test on <SearchBar /> Should show correctly (shallow rendering) 1`] = `
+<form
+  className="herosearch__searchbar data-card  "
+  onSubmit={[Function]}
+>
+  <input
+    autoComplete="off"
+    className="search__input"
+    name="description"
+    onChange={[Function]}
+    placeholder="Search..."
+    type="text"
+    value=""
+  />
+  <div
+    className="search__btn"
+  >
+    <i
+      className="fas fa-search"
+    />
+  </div>
+</form>
+`;
