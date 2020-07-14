@@ -1,0 +1,32 @@
+.herosearch {
+  position: relative;
+  height: 390px;
+  transition: 0.4s;
+}
+.herosearch:last-child {
+  padding-bottom: 40px;
+}
+
+.herosearch__description {
+  margin-bottom: 0px;
+  position: relative;
+}
+.herosearch__results {
+  position: absolute;
+  bottom: 35px;
+  left: 20px;
+  color: var(--bg-color);
+  opacity: 0.9;
+  transition: 0.4s;
+}
+.herosearch__results:hover {
+  opacity: 1;
+}
+
+.carousel {
+  /* margin-bottom: 40px; */
+  overflow: scroll;
+  position: relative;
+  width: 100%;
+  padding-left: 25px;
+}
