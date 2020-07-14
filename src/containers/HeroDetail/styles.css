@@ -1,0 +1,75 @@
+.character__container {
+  margin: 40px 20px;
+  /* position: relative; */
+  background: var(--main-color);
+  box-shadow: 9px 9px 14px #8a8a8a, -9px -9px 14px #ffffff;
+}
+
+.profile-pic--img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+}
+
+.info {
+  padding: 20px 40px;
+}
+
+.info > div {
+  border-bottom: 1px solid var(--gray);
+  padding: 20px 0px;
+}
+.info > div:last-child {
+  border-bottom: 0px solid var(--gray);
+  padding-bottom: 50px;
+}
+
+.info__name {
+  display: flex;
+  align-items: center;
+}
+
+.name__id {
+  margin-left: 10px;
+}
+
+.info__description--p {
+  text-align: justify;
+  font-weight: 100;
+  color: var(--text-color2);
+  font-size: var(--fontsize-p);
+}
+
+.comics {
+  position: relative;
+}
+.comics__available--p {
+  position: absolute;
+  z-index: 1;
+  box-shadow: none;
+}
+
+.link__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.link__item {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--text-color2);
+  letter-spacing: 3px;
+  margin: 5px 0px;
+  transition: 0.4s;
+}
+.link__item:hover {
+  color: var(--red-marvel);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.link__item i {
+  border-right: 1px solid var(--text-color2);
+  padding: 2px 5px;
+}
