@@ -1,8 +1,13 @@
 import React from 'react';
-import { MarvelHeroes } from './containers/MarvelHeroes/MarvelHeroes';
+import { HeroContext } from './context/HeroContext';
+import { AppRouter } from './routes/AppRouter';
 
 const App = () => {
-  return <MarvelHeroes />;
+  return (
+    <HeroContext.Provider>
+      <AppRouter />
+    </HeroContext.Provider>
+  );
 };
 
 export default App;
