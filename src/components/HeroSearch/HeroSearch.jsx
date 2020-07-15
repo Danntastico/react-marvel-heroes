@@ -8,7 +8,7 @@ import './styles.css';
 export const HeroSearch = ({ setHeroByName, data, isLoading, heroName }) => {
   return (
     <>
-      <div className='herosearch container animate__animated animate__fadeInUp'>
+      <div className='herosearch  animate__animated animate__fadeInUp'>
         <div className='herosearch__description'>
           <h2 className='title'>Search</h2>
           <p className='paragraph'>
