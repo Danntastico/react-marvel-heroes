@@ -7,6 +7,7 @@ import './styles.css';
 export const HomePage = () => {
   const [heroByName, setHeroByName] = useState('Spider-man');
   const response = useFetchAllHeroes(heroByName, 10);
+
   const { data, loading } = response;
   console.log(data);
   return (
