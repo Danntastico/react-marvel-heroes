@@ -1,7 +1,7 @@
 import axios from 'axios';
 import md5 from 'md5';
 
-const API_URL = 'http://gateway.marvel.com/v1/public/characters';
+const API_URL = 'https://gateway.marvel.com/v1/public/characters';
 const ts = '0';
 const PUBLIC_KEY = '11f5b6914b4730de47ff5958e302c450';
 const PRIVATE_KEY = 'fa5d57d6f5aa31b91223cf59ab14511be03e6711';
