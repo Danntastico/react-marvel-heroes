@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useReducer, useEffect } from 'react';
 import { HeroContext } from './context/HeroContext';
 import { AppRouter } from './routes/AppRouter';
+import { AuthContext } from './auth/AuthContext';
+import { authReducer } from './auth/authReducer';
+
+const init = () => {
+  return JSON.parse(localStorage.getItem('user')) || { logged: false };
+};
 
 const App = () => {
+  const [user, dispatch] = useReducer(authReducer, {}, init);
+  useEffect(() => {
+    localStorage.setItem('user', JSON.stringify(user));
+  }, [user]);
   return (
-    <HeroContext.Provider>
+    <AuthContext.Provider value={{ user, dispatch }}>
       <AppRouter />
-    </HeroContext.Provider>
+    </AuthContext.Provider>
   );
 };
 
