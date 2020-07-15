@@ -1,0 +1,55 @@
+.herosearch__searchbar {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  top: 130px;
+  z-index: 1;
+  transform: translate(0%, -50%);
+  height: 40px;
+  /* padding: 10px; */
+  display: flex;
+  transition: 0.4s;
+}
+.herosearch__searchbar--active {
+  opacity: 0.7;
+}
+.herosearch__searchbar--active > .search__input {
+  width: 150px;
+  padding-left: 3px;
+}
+.herosearch__searchbar--active:hover {
+  opacity: 1;
+}
+
+.herosearch__searchbar:hover > .search__input {
+  width: 150px;
+  padding: 0 20px;
+}
+.herosearch__searchbar:hover > .search__btn {
+  border-radius: 10px;
+  font-size: 20px;
+}
+.search__btn {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  color: white;
+}
+
+.search__input {
+  border: none;
+  background: none;
+  outline: none;
+  font-weight: 100;
+  font-size: 0.9em;
+  width: 0px;
+  transition: 0.4s;
+  color: white;
+}
+.search__input::placeholder {
+  color: white;
+  font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,18 @@
+.carousel__container {
+  transition: 450ms -webkit-transform;
+  transition: 450ms transform;
+  transition: 450ms transform, 450ms -webkit-transform;
+  white-space: nowrap;
+  margin: 20px 0px;
+  padding-bottom: 10px;
+}
+.carousel__container:hover .carousel__item {
+  opacity: 0.3;
+}
+
+.carousel__container:hover .carousel__item:hover {
+  /* transform: translateY(-30px); */
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 1;
+}
