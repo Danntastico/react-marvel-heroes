@@ -1,9 +1,12 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef, useEffect, useState } from 'react';
 import { AuthContext } from '../../auth/AuthContext';
 import { types } from '../../types/types';
 import { useForm } from '../../hooks/useForm';
 
 export const LoginScreen = ({ history }) => {
+  const userInput = useRef(false);
+  const passInput = useRef(false);
+
   const { dispatch } = useContext(AuthContext);
   const [{ email, password }, handleInputChange, reset] = useForm({
     email: '',
@@ -20,6 +23,17 @@ export const LoginScreen = ({ history }) => {
     });
     history.replace(lastPath);
   };
+
+  const handleFocus = (ref) => {
+    ref.current.classList.add('focus');
+  };
+
+  const handleBlur = (ref, value) => {
+    if (value === '') {
+      ref.current.classList.remove('focus');
+    }
+  };
+
   return (
     <div className='login__container'>
       <div className='login'>
@@ -28,11 +42,11 @@ export const LoginScreen = ({ history }) => {
           alt='marvel-log'
           className='login__logo'
         />
-        <h1 className='login__title main__title'>Login</h1>
         <form className='login__form'>
-          <div className='login__input-div'>
+          <h1 className='login__title main__title'>Welcome!</h1>
+          <div ref={userInput} className={`login__input-div`}>
             <div className='i'>
-              <i class='fas fa-user'></i>
+              <i className='fas fa-user'></i>
             </div>
             <div>
               <h5 className='login__input-label'>Username</h5>
@@ -42,12 +56,15 @@ export const LoginScreen = ({ history }) => {
                 value={email}
                 className='input'
                 onChange={handleInputChange}
+                onFocus={() => handleFocus(userInput)}
+                onBlur={() => handleBlur(userInput, email)}
+                autoComplete='off'
               />
             </div>
           </div>
-          <div className='login__input-div'>
+          <div ref={passInput} className='login__input-div'>
             <div className='i'>
-              <i class='fas fa-lock'></i>
+              <i className='fas fa-lock'></i>
             </div>
             <div>
               <h5 className='login__input-label'>Password</h5>
@@ -57,11 +74,18 @@ export const LoginScreen = ({ history }) => {
                 value={password}
                 className='input'
                 onChange={handleInputChange}
+                onFocus={() => handleFocus(passInput)}
+                onBlur={() => handleBlur(passInput, password)}
+                autoComplete='off'
               />
             </div>
           </div>
-          <button type='submit' onClick={handleClick}>
-            Login
+          <button
+            type='submit'
+            onClick={handleClick}
+            className='btn login__btn'
+          >
+            login
           </button>
         </form>
       </div>

@@ -31,7 +31,7 @@ export const NavBar = () => {
       </div>
       <div className='navbar__username'>
         <p className='navbar__username--p'>
-          <i class='far fa-user'></i> {name}
+          <i className='far fa-user'></i> {name}
         </p>
         <button
           className='navbar__logout-btn animate__animated animate__fadeInUp'
