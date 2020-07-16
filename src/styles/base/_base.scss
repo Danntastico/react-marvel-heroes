@@ -7,28 +7,28 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--bg-color);
+  background-color: $bg-color;
 }
 p {
   font-size: 1em;
   font-weight: 400;
-  color: var(--text-color2);
+  color: $text-color2;
 }
 
 .main__title {
-  color: var(--text-color);
+  color: $text-color;
   text-transform: uppercase;
-  font-size: 2.5em;
+  font-size: $fontsize-main_title;
 }
 
 .paragraph {
-  font-size: var(--fontsize-p);
+  font-size: $fontsize-p;
 }
 
 .data-card {
   padding: 10px 10px;
-  font-size: 0.8em;
-  color: var(--red-marvel);
+  font-size: $fontsize-data-card;
+  color: $red-marvel;
   font-weight: 600;
   border-radius: 7px;
   background: linear-gradient(145deg, #d0d0d0, #afafaf);
@@ -51,17 +51,17 @@ p {
 .title {
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--text-color);
+  color: $text-color;
   letter-spacing: 5px;
   padding-bottom: 12px;
-  font-size: var(--fontsize-title);
+  font-size: $fontsize-title;
 }
 
 .container {
   margin: 10px 20px;
   padding: 30px;
 
-  border-radius: 8px;
-  background: #c2c2c2;
-  box-shadow: -6px -6px 7px #848484, 6px 6px 7px #ffffff;
+  border-radius: 50px;
+  background: #eeecec;
+  box-shadow: $bg-boxshadow;
 }

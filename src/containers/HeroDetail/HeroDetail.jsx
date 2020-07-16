@@ -2,12 +2,6 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useFetchHeroById } from '../../hooks/useFetchHeroById';
 import { constructImagePath } from '../../helpers/constructImagePath';
-/* import { Carousel } from '../../components/Carousel/Carousel';
-import { CarouselItem } from '../../components/CarouselItem/CarouselItem';
-import { getResourceURI } from '../../helpers/SuperHeroAPI';
-import { useFetch } from '../../hooks/useFetch'; */
-
-import './styles.css';
 
 export const HeroDetail = () => {
   const params = useParams();
