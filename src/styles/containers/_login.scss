@@ -1,0 +1,140 @@
+.login__container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  @media screen and (min-width: $break-phone) {
+    flex-direction: row;
+    margin: 0 5vw;
+  }
+  @media screen and (min-width: $break-tablet) {
+    flex-direction: row;
+    margin: 0 10vw;
+  }
+  @media screen and (min-width: $break-desktop) {
+    flex-direction: row;
+    margin: 0 20vw;
+  }
+}
+.login__form {
+  width: 80%;
+}
+.login__logo {
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  width: 50%;
+  padding-bottom: 10px;
+
+  @media screen and (min-width: $break-phone) {
+    padding: {
+      right: 20px;
+      bottom: 0px;
+    }
+    margin: {
+      right: 20px;
+    }
+    border: {
+      right: 2px solid $gray;
+    }
+  }
+}
+
+.login__input-div {
+  position: relative;
+  display: grid;
+  grid-template-columns: 7% 90%;
+  margin: 25px 0;
+  padding: 5px 0 5px 4px;
+  transition: 0.3s;
+  border-radius: 5px;
+  background: #eeecec;
+  box-shadow: inset 9px 9px 19px #cfcdcd, inset -9px -9px 19px #ffffff,
+    -1px -1px 5px #ffffff, 1px 1px 5px #cfcdcd;
+}
+
+.login__input-div.focus {
+  box-shadow: inset -9px -9px 19px #cfcdcd, inset 9px 9px 19px #ffffff;
+}
+
+.login__input-div:after,
+.login__input-div:before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+}
+
+.login__input-div:after {
+  right: 50%;
+}
+
+.login__input-div:before {
+  left: 50%;
+}
+
+.login__input-div.focus .login__input-label {
+  top: -5px;
+  font-size: 15px;
+}
+
+.i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.i i {
+  transition: 0.3s;
+  color: $text-color;
+}
+
+.login__input-div > div {
+  position: relative;
+  height: 45px;
+}
+
+.login__input-label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $text-color;
+  font-size: $fontsize-p;
+  transition: 0.3s;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.75rem 0.7rem;
+  font-size: 0.8rem;
+  color: $text-color;
+}
+
+.login__btn {
+  padding: 0.75rem 0.7rem;
+  width: 100%;
+  font-size: 1.8rem;
+  color: $bg-color;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  transition: 0.4s;
+}
