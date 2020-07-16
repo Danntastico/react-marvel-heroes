@@ -21,12 +21,16 @@ Project is created with:
 - enzyme-to-json: ^3.5.0
 - testing-library/react-hooks: ^3.3.0
 
-```bash
- yarn install
-```
+## Setup
+
+To run this project, install it locally using npm:
 
 ```
- yarn start
+$ cd /super-hero
+$ npm install
+$ npm start
+
+or using yarn too!
 ```
 
 ## Information
