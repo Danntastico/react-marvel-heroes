@@ -12,7 +12,7 @@ export const HomePage = () => {
   console.log(data);
   return (
     <>
-      <div className='main'>
+      <div className='main container'>
         <div className='welcome'>
           <h2 className='welcome__title main__title'>Marvel Heroes API</h2>
           <p className='welcome__description paragraph'>

@@ -1,7 +1,7 @@
 .character__container {
   margin: 40px 20px;
   /* position: relative; */
-  background: var(--main-color);
+  background: var(--bg-color);
   box-shadow: 9px 9px 14px #8a8a8a, -9px -9px 14px #ffffff;
 }
 
@@ -38,7 +38,6 @@
 .info__description--p {
   text-align: justify;
   font-weight: 100;
-  color: var(--text-color2);
   font-size: var(--fontsize-p);
 }
 
@@ -48,7 +47,6 @@
 .comics__available--p {
   position: absolute;
   z-index: 1;
-  box-shadow: none;
 }
 
 .link__list {
