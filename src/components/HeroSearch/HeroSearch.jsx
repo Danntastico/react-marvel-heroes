@@ -3,8 +3,6 @@ import { Searchbar } from '../Searchbar/Searchbar';
 import { Carousel } from '../Carousel/Carousel';
 import { CarouselItem } from '../CarouselItem/CarouselItem';
 
-import './styles.css';
-
 export const HeroSearch = ({ setHeroByName, data, isLoading, heroName }) => {
   return (
     <>

@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
-import { Link, useHistory } from 'react-router-dom';
-import './styles.css';
+import { useHistory } from 'react-router-dom';
 import { AuthContext } from '../auth/AuthContext';
 import { types } from '../types/types';
 

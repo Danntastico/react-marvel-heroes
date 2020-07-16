@@ -1,8 +1,6 @@
 import React from 'react';
 import { useForm } from '../../hooks/useForm';
 
-import './styles.css';
-
 export const Searchbar = ({ setHeroByName }) => {
   const [{ description }, handleInputChange] = useForm({
     description: '',

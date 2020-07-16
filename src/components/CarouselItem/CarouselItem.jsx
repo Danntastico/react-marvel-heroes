@@ -1,7 +1,6 @@
 import React from 'react';
 import { constructImagePath } from '../../helpers/constructImagePath';
 
-import './styles.css';
 import { Link } from 'react-router-dom';
 
 export const CarouselItem = ({ thumbnail, name, id }) => {
