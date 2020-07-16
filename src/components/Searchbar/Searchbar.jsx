@@ -16,7 +16,7 @@ export const Searchbar = ({ setHeroByName }) => {
     description !== '' ? 'herosearch__searchbar--active' : ' ';
   return (
     <form
-      className={`herosearch__searchbar data-card ${activeInput}`}
+      className={`herosearch__searchbar ${activeInput}`}
       onSubmit={handleSubmit}
     >
       <input

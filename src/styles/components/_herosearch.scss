@@ -13,11 +13,12 @@
 }
 .herosearch__results {
   position: absolute;
-  bottom: 35px;
-  left: 20px;
-  color: var(--bg-color);
+  bottom: 70px;
+  right: 5px;
+  color: $text-color;
   opacity: 0.9;
   transition: 0.4s;
+  z-index: -1;
 }
 .herosearch__results:hover {
   opacity: 1;
@@ -28,5 +29,4 @@
   overflow: scroll;
   position: relative;
   width: 100%;
-  padding-left: 25px;
 }

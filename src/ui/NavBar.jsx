@@ -23,18 +23,21 @@ export const NavBar = () => {
   };
   return (
     <nav className='header__navbar'>
-      <div className='navbar__menu'>
-        <div className='navbar__logo'>
-          <img
-            src='./assets/img/headerlogo.svg'
-            alt='nav-logo'
-            className='logo__img'
-          />
-        </div>
+      <div className='navbar__logo'>
+        <img
+          src='./assets/img/headerlogo.svg'
+          alt='nav-logo'
+          className='logo__img'
+        />
       </div>
-      <div>
-        <p className=''>{name}</p>
-        <button className='data-card btn' onClick={handleLogout}>
+      <div className='navbar__username'>
+        <p className='navbar__username--p'>
+          <i class='far fa-user'></i> {name}
+        </p>
+        <button
+          className='navbar__logout-btn animate__animated animate__fadeInUp'
+          onClick={handleLogout}
+        >
           Logout
         </button>
       </div>

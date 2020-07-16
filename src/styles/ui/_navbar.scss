@@ -1,0 +1,42 @@
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  position: relative;
+  background: #3d3d3d;
+  box-shadow: -41px 41px 82px #383838, 41px -41px 82px #424242;
+  z-index: 1;
+}
+
+.logo__img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+.navbar__username {
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+}
+.navbar__username--p {
+  text-transform: uppercase;
+  color: var(--gray);
+}
+.navbar__username:hover > .navbar__logout-btn {
+  display: block;
+}
+.navbar__username:hover {
+  border-radius: 8px;
+  background: #3d3d3d;
+  box-shadow: -6px -6px 7px #292929, 6px 6px 7px #515151;
+}
+.navbar__logout-btn {
+  position: absolute;
+  display: none;
+  width: inherit;
+}
+.navbar__logout-btn:hover {
+  display: block;
+}

@@ -1,5 +1,4 @@
 import React, { useReducer, useEffect } from 'react';
-import { HeroContext } from './context/HeroContext';
 import { AppRouter } from './routes/AppRouter';
 import { AuthContext } from './auth/AuthContext';
 import { authReducer } from './auth/authReducer';
