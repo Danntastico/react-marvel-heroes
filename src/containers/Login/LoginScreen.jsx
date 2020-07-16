@@ -16,7 +16,7 @@ export const LoginScreen = ({ history }) => {
     history.replace(lastPath);
   };
   return (
-    <div>
+    <div className='container'>
       <h1>Login</h1>
       <button onClick={handleClick}>Login</button>
     </div>

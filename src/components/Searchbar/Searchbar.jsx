@@ -1,8 +1,6 @@
 import React from 'react';
 import { useForm } from '../../hooks/useForm';
 
-import './styles.css';
-
 export const Searchbar = ({ setHeroByName }) => {
   const [{ description }, handleInputChange] = useForm({
     description: '',
@@ -16,7 +14,7 @@ export const Searchbar = ({ setHeroByName }) => {
     description !== '' ? 'herosearch__searchbar--active' : ' ';
   return (
     <form
-      className={`herosearch__searchbar data-card ${activeInput}`}
+      className={`herosearch__searchbar ${activeInput}`}
       onSubmit={handleSubmit}
     >
       <input
